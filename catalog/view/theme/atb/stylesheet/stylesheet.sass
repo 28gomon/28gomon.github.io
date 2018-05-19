@@ -1,0 +1,690 @@
+@import "bourbon"
+@import "vars"
+@import "fonts"
+
+//Custom styles here
+
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover
+    z-index: 2
+    color: #fff
+    background-color: $color_1082C6
+    border-color: $color_1082C6_hover
+
+.modal-content
+    border: 2px solid $color_ffb739
+    
+.alert
+    margin-top: 20px
+
+.content-detail-product
+    margin-top: 25px
+
+.common-home
+    #content
+        margin-top: 10px
+
+.indentation
+    width: 100%
+    display: block
+    height: 30px
+
+.form-control
+    &:focus
+        box-shadow: none
+        border: 1px solid $color_ffb739
+
+textarea
+    width: 100%
+    max-width: 100%
+    min-height: 280px
+    max-height: 450px
+    
+.btn-primary
+    color: #fff
+    background-color: $color_1082C6
+    border-color: $color_1082C6
+    transition: background-color .2s ease-in-out
+    &:hover
+        background-color: $color_1082C6_hover
+        border-color: $color_1082C6_hover
+
+.btn-info
+    color: #fff
+    background-color: $color_1082C6
+    border-color: $color_1082C6
+    transition: background-color .2s ease-in-out
+    &:hover
+        background-color: $color_1082C6_hover
+        border-color: $color_1082C6_hover
+body
+    font-family: RobotoCondensedRegular, sans-serif
+    line-height: 1.5
+
+a, a:focus, a:active
+  outline: none
+  text-decoration: none
+
+p
+    font-size: 16px
+    
+button, button:hover, button:active, button:focus
+    outline: none
+
+footer
+    background-color: $color_f5f5f5
+    padding-top: 30px
+    margin-top: 30px
+    padding-bottom: 15px
+
+.header-home
+    vertical-align: baseline
+    min-height: 300px
+    background-color: rgba(0,0,0,0.63)
+    position: relative
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        width: 100%
+        height: 100%
+        background: url("../image/element-design/category.jpg") no-repeat
+        background-size: cover
+        background-position: right
+        z-index: -1
+    &::after
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        width: 100%
+        height: 300px
+        background-image: url("../image/element-design/shadow-top.png")
+        z-index: -1
+    .top-section
+        position: relative
+        width: 100%
+        padding-bottom: 30px
+        z-index: 15
+
+header
+    z-index: 0
+    .search-container
+        width: 70%
+        margin: 0 auto
+        .search-group
+            padding-bottom: 30px
+            .input-group
+                input
+                    border: 1px solid lighten($color_000000, 10)
+                    background: rgba(0,0,0,0.45)
+                    font-weight: 300
+                    &:focus
+                        box-shadow: none
+                .button-search
+                    button
+                        border: 1px solid lighten($color_000000, 10)
+                        background: rgba(0,0,0,0.75)
+                        color: $color_f5f5f5
+
+.section-information-button
+    text-align: center
+    ul.information-menu
+        margin-left: 0
+        padding-left: 0
+        li
+            display: inline-block
+            padding: 0
+            a
+                color: $color_ffffff
+                font-family: RobotoCondensedRegular, sans-serif
+                font-size: $font-size-20
+                font-weight: 500
+                transition: color, border .3s ease-in-out
+                text-shadow: 0px 1px 1px rgba(0,0,0,0.75)
+                padding: 10px 15px
+                &:hover
+                    text-decoration: underline
+                    color: $color_f5f5f5
+                    opacity: .75
+
+.common-home
+    position: relative
+    .header-home
+        vertical-align: baseline
+        min-height: 650px
+        background-color: rgba(0,0,0,0.70)
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            width: 100%
+            height: 100%
+            background: url("../image/element-design/composition.png") no-repeat
+            background-size: cover
+            background-position: center
+            z-index: -1
+        &::after
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            width: 100%
+            height: 320px
+            background-image: url("../image/element-design/shadow-top.png")
+            z-index: -1
+        .top-section
+            position: relative
+            width: 100%
+            padding-bottom: 30px
+            z-index: 15
+    header
+        z-index: 0
+        .search-container
+            width: 70%
+            margin: 0 auto
+            .search-group
+                padding-bottom: 30px
+                .input-group
+                    input
+                        border: 1px solid lighten($color_000000, 2)
+                        background: rgba(0,0,0,0.45)
+                        font-weight: 300
+                        font-family: RobotoCondensedRegular, sans-serif
+                        &:focus
+                            box-shadow: none
+                    .button-search
+                        button
+                            border: 1px solid lighten($color_000000, 2)
+                            background: rgba(0,0,0,0.75)
+                            color: $color_f5f5f5
+    .head-block-home-left, .head-block-home-right
+        //position: absolute
+        top: 10px
+        width: 100%
+        .header-single-text
+            width: 85%
+            h2
+                color: $color_ffffff
+                line-height: 40px
+                text-shadow: 0px 1px 1px rgba(0,0,0,0.75)
+                a
+                    color: $color_ffb739
+                    text-decoration: underline
+                    &:hover
+                        text-decoration: none
+        .form-order-service
+            margin-top: 20px
+            background-color: $color_ffffff
+            border-radius: 4px
+            padding: 15px 30px
+            box-shadow: 0 1px 18px rgba(0, 0, 0, 0.9)
+            width: 100%
+            h4
+                text-align: center
+            form
+                input
+                    display: block
+                    width: 100%
+                    margin-top: 20px
+                    height: 40px
+                    font-size: $font-size-18
+                    color: $color_000000
+                    border: 1px solid $color_D0D0D0
+                    padding-left: 10px
+                    border-radius: 4px
+                .form-control-top
+                    &:focus
+                        border: 1px solid $color_ffb739
+                label
+                    display: block
+                    margin-top: 15px
+                select
+                    display: block
+                    width: 100%
+                    height: 40px
+                .btn-form
+                    margin-bottom: 10px
+                    input
+                        background-color: $color_1082C6
+                        border-color: $color_1082C6
+                        color: $color_ffffff
+                        height: 45px
+                        transition: background-color .2s ease-in-out
+                        &:hover
+                            background-color: $color_1082C6_hover
+.top-section
+    .top-phone-number
+        text-align: center
+        display: block
+        padding: 15px 0 15px 0
+        z-index: 5
+        ul
+            li
+                position: relative
+                padding: 0 15px
+                font-size: $font-size-20
+                list-style: none
+                display: inline-block
+                color: $color_ffffff
+                a
+                    color: $color_ffffff
+                    text-shadow: 0px 1px 1px rgba(0,0,0,0.75)
+                    &:hover
+                        text-decoration: none
+                &.tel_1::after, &.tel_2::after, &.tel_3::after
+                    content: ''
+                    position: absolute
+                    top: 5px
+                    left: -5px
+                    width: 20px
+                    height: 20px
+                    display: block
+                    opacity: .75
+                &.tel_1::after
+                    background: url("../image/element-design/icon-life.png") no-repeat
+                &.tel_2::after
+                    background: url("../image/element-design/icon-mtc.png") no-repeat
+                &.tel_3::after
+                    background: url("../image/element-design/icon-velcom.png") no-repeat
+    .top-links
+        width: 100%
+        display: inline-block
+        .top-box
+            width: 100%
+            display: flex
+            flex-wrap: wrap
+            justify-content: right
+            color: $color_ffffff
+            z-index: 5
+            >div
+                padding-left: 15px
+            .authorization-registration
+                ul.list-inline
+                    padding-top: 6.5px
+                    li.dropdown
+                        ul.dropdown-menu
+                            top: 135%
+                        a.dropdown-toggle
+                            text-shadow: 0px 1px 1px rgba(0,0,0,0.75)
+                            color: $color_ffffff
+                            &:active, &:focus, &:hover
+                                background: transparent
+                                text-decoration: none
+            .cart-button
+                //display: none
+                #cart
+                    button
+                        margin-top: 2px
+                        background-color: transparent
+                    .btn-lg
+                        padding: 0
+                        .fa
+                            display: none
+                    .dropdown-menu
+                        top: 130%
+                        color: $color_000000
+                        width: 550px
+                        padding: 10px 10px 5px 10px
+                        button.btn-danger
+                            background-color: $color_FF4E3F
+                            color: $color_ffffff
+                            width: 30px
+                            height: 30px
+                            text-align: center
+                        a
+                            strong
+                                color: rgba(0,0,0,0.55)
+            .btn-group
+                button
+                    color: $color_ffffff
+                    text-shadow: 0px 1px 1px rgba(0,0,0,0.75)
+                    &:focus, &:active, &:hover
+                        text-decoration: none
+                .dropdown-menu
+                    li
+                        button
+                            text-align: left
+                            color: $color_000000
+                            text-shadow: 0px 1px 1px rgba(0,0,0,0.00)
+                            font-family: RobotoCondensedRegular, sans-serif
+                            &:hover
+                                background-color: $color_f5f5f5
+                                text-decoration: none
+                    z-index: 5
+                    width: auto
+.category-header-mobile
+    display: none
+
+.breadcrumb
+    margin-top: 30px
+    margin-bottom: 0
+    background-color: transparent
+    li
+        a
+            color: $color_000000
+
+// описание карточки услуги
+.featured
+    margin:
+        top: 20px
+        bottom: 20px
+.service-card
+    width: 100%
+    min-height: 200px
+    border-radius: 4px
+    .service-box
+        position: relative
+        .image
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            width: 100%
+            height: 100%
+            z-index: -1
+            background-size: cover
+            background-position: center
+            img
+                width: 100%
+                height: 200px
+                background-size: cover
+                background-position: center
+// описание карточки услуги
+
+// наши услуги на главной
+.product-layout
+    margin:
+        top: 30px
+    .featured-home
+        position: relative
+        .product-thumb
+            position: relative
+            min-height: 260px
+            border-radius: 4px
+            border: 2px solid $color_ffb739
+            transition: all .3s ease-in-out
+            &:hover
+                box-shadow: 0 1px 18px rgba(0, 0, 0, 0.2)
+            &::after
+                content: ''
+                position: absolute
+                top: 0
+                left: 0
+                right: 0
+                bottom: 0
+                width: 100%
+                height: 100%
+                background-color: rgba(255,255,255,0.85)
+                z-index: -1
+            .image
+                position: absolute
+                top: 0
+                width: 100%
+                height: 100%
+                z-index: -1
+                a
+                    img
+                        width: 100%
+                        height: 100%
+            .caption
+                padding: 20px
+                h4
+                    margin-top: 0
+                    a
+                        font-size: $font-size-22
+                        color: $color_1082C6
+                .more-eng, .more-rus
+                    color: $color_ffb739
+                    font-size: $font-size-20
+                    font-weight: 500
+                p.description
+                    font-size: $font-size-18
+                p.price
+                    margin-top: 15px
+                    font-size: $font-size-20
+                    span.price-new
+                        font-size: $font-size-22
+                        color: $color_FF4E3F
+                    span.price-old
+                        font-size: $font-size-16
+                        text-decoration: line-through
+            .button-group
+                position: absolute
+                bottom: 0
+                display: flex
+                width: 100%
+                button, a
+                    text-align: center
+                    width: 50%
+                    height: 45px
+                    border: none
+                    background-color: $color_f5f5f5
+                    transition: all .3s ease-in-out
+                    &:hover
+                        background-color: $color_D0D0D0
+                        text-shadow: 1px 1px 1px rgba(255,255,255,0.75)
+                        text-decoration: none
+                    &:first-child
+                        background-color: $color_1082C6
+                        color: $color_ffffff
+                        &:hover
+                            background-color: $color_1082C6_hover
+                            text-shadow: 1px 1px 1px rgba(255,255,255,0.00)
+                a
+                    padding-top: 12px
+            .button-hover
+                display: none
+.russian
+    .more-eng, .button-order-2-eng, .en
+        display: none
+.english
+    .more-rus, .button-order-2-rus, .ru
+        display: none
+        
+.product-popup
+    .pp-content
+        position: relative
+        h3
+            margin-top: 5px
+        p
+            text-align: center
+            font-size: $font-size-20
+            span.price-new
+                font-size: $font-size-24
+                color: $color_FF4E3F
+            span.price-old
+                font-size: $font-size-20
+                text-decoration: line-through
+        form.ajax-form
+            margin-top: 15px
+            input.form-control
+                margin-bottom: 20px
+                height: 45px
+                font-size: $font-size-18
+            button
+                display: block
+                width: 100%
+                height: 45px
+                &:active, &:hover, &:focus
+                    outline: none
+                    border: none
+        .success-form
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            width: 100%
+            height: 100%
+            background-color: $color_ffffff
+            text-align: center
+            font-size: $font-size-20
+            display: none
+            padding-top: 32%
+            span
+                text-align: center
+                width: 100%
+// наши услуги на главной
+
+// меню категорий
+#column-left
+    margin-top: 25px
+// меню категорий
+
+// вид услуги в категории
+.product-thumb
+    position: relative
+    min-height: 360px
+    border-radius: 4px
+    border: 2px solid $color_ffb739
+    transition: all .3s ease-in-out
+    &:hover
+        box-shadow: 0 1px 18px rgba(0, 0, 0, 0.2)
+        .button-hover
+            visibility: visible
+            opacity: 1
+    &::after
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(255,255,255,0.85)
+        z-index: -1
+    .image
+        position: absolute
+        top: 0
+        width: 100%
+        height: 100%
+        z-index: -1
+        a
+            img
+                width: 100%
+                height: 100%
+    .caption
+        padding: 30px
+        h4
+            margin-top: 20px
+            a
+                font-size: $font-size-20
+                color: $color_1082C6
+        .more-eng, .more-rus
+            color: $color_ffb739
+            font-size: $font-size-20
+            font-weight: 500
+        p.description
+            font-size: $font-size-18
+        p.price
+            margin-top: 15px
+            font-size: $font-size-20
+            span.price-new
+                font-size: $font-size-22
+                color: $color_FF4E3F
+            span.price-old
+                font-size: $font-size-16
+                text-decoration: line-through
+    .button-group
+        position: absolute
+        bottom: 0
+        width: 100%
+        button, a
+            text-align: center
+            display: block
+            width: 100%
+            height: 45px
+            border: none
+            background-color: $color_f5f5f5
+            transition: all .3s ease-in-out
+            &:hover
+                background-color: $color_D0D0D0
+                text-shadow: 1px 1px 1px rgba(255,255,255,0.75)
+                text-decoration: none
+            &:first-child
+                background-color: $color_1082C6
+                color: $color_ffffff
+                &:hover
+                    background-color: $color_1082C6_hover
+                    text-shadow: 1px 1px 1px rgba(255,255,255,0.00)
+        a
+            padding-top: 12px
+            color: $color_000000
+            opacity: .75
+    .button-hover
+        position: absolute
+        top: 10px
+        right: 10px
+        visibility: hidden
+        opacity: 0
+        transition: all .3s ease-in-out
+        button
+            padding: 0 4px
+.product-list
+    .product-thumb
+        min-height: 260px
+        .button-group
+            display: flex
+// вид услуги в категории
+
+// footer сайта
+.copy-and-dev
+    p
+        display: inline-block
+        &:last-child
+            float: right
+// footer сайта
+
+// product-product
+#content
+    .product-wrapper
+        margin-bottom: 30px
+        padding: 15px 15px 5px 15px
+        background-color: $color_f5f5f5
+        border-radius: 4px
+        border: 1px solid $color_DDDDDD
+        
+.product-review-description
+    padding-right: 48px
+// product-product
+
+// product-category
+.product-category
+    h1
+        margin-bottom: 30px
+
+ul.name-service
+    margin-bottom: 30px
+    margin-top: 10px
+    padding-left: 0
+    display: block
+    line-height: 30px
+    li
+        display: inline-block
+        padding: 0 5px
+        a
+            display: inline-block
+            color: $color_000000
+            text-decoration: underline
+            transition: color .2s ease-in-out
+            font-size: 16px
+            &:hover
+                color: $color_1082C6_hover
+                text-decoration: none
+// product-category
+
+@import "media"
+@import "headers"

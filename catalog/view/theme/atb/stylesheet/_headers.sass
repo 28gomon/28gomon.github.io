@@ -1,0 +1,153 @@
+@import "bourbon"
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+    
+    .img-responsive
+        display: inline-block
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+    
+    #logo
+        text-align: center
+        a
+            width: 140px
+            display: block
+            margin: auto
+    .top-section
+        .top-links
+            margin-top: 15px
+            .top-box
+                justify-content: center
+                ul.dropdown-menu
+                    right: -55%
+        .pull-right
+            float: none
+
+    .section-information-button
+        ul.information-menu
+            display: none
+            
+    .common-home
+        .header-home
+            min-height: 800px
+        .head-block-home-left
+            .header-single-text
+                width: 100%
+                h2
+                    font-size: $font-size-20
+                    line-height: 30px
+                    text-align: center
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+    
+    .top-section
+        .top-links
+            .top-box
+                .cart-button
+                    display: block
+                    width: 100%
+                    #cart
+                        ul.dropdown-menu
+                            width: 100%
+                            min-width: 420px
+                            right: 0
+
+    .common-home
+        header
+            .search-container
+                width: 95%
+                
+    .category-header-mobile
+        display: block
+        #menu
+            .navbar-header
+                height: 75px
+                span#category
+                    display: none
+                    visibility: hidden
+                    width: 50%
+                button
+                    border: 1px solid $color_DDDDDD
+                    padding:
+                        left: 15px
+                        right: 15px
+            .navbar-collapse
+                background-color: $color_f5f5f5
+                .nav
+                    li
+                        a
+                            color: $color_000000
+                            font-size: $font-size-18
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+    
+    .top-section
+        .top-links
+            .top-box
+                .cart-button
+                    #cart
+                        ul.dropdown-menu
+                            width: 100%
+                            min-width: 300px
+                            right: 0
+    
+    .common-home
+        .header-home
+            min-height: 730px
+        .head-block-home-left
+            .header-single-text
+                width: 100%
+                h2
+                    display: none
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+    
+    .common-home
+        .header-home
+            min-height: 750px
+    
+    .top-section
+        .top-links
+            .top-box
+                .cart-button
+                    #cart
+                        ul.dropdown-menu
+                            width: 100%
+                            min-width: 290px
+                            right: 0
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+    /**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+    /**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+    /**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+    /**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+    /**/
+
